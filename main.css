@@ -9,6 +9,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    background: white;
+    top: 0;
+    z-index: 1;
 }
 
 nav span {
@@ -77,6 +81,7 @@ button {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    position: absolute;
 }
 
 @keyframes rotation {
