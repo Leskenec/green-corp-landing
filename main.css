@@ -4,18 +4,6 @@
             color: #213053;
         }
         
-        .animate__slideInLeft {
-            animate-duration: 2s;
-        }
-        
-        .animate__slideInRight {
-            animate-duration: 2s;
-        }
-        
-        .button i {
-            padding-left: 5px;
-        }
-        
         header {
             padding: 20px;
             display: flex;
