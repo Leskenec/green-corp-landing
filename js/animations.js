@@ -1,3 +1,6 @@
+const INCREASE_NUMBER_ANIMATION_SPEED = 50;
+let animationInited = false;
+
 document.querySelector('#budget').addEventListener('change', function handleSelectChange(event) {
     if (event.target.value === 'other') {
         const formContainer = document.createElement('div');
@@ -17,8 +20,7 @@ document.querySelector('#budget').addEventListener('change', function handleSele
         document.querySelector('#form form').removeChild(otherInput);
     }
 });
-const INCREASE_NUMBER_ANIMATION_SPEED = 50;
-let animationInited = false;
+
 
 function increaseNumberAnimationStep(i, element, endNumber) {
     if (i <= endNumber) {
@@ -54,4 +56,18 @@ function updateScroll() {
     }
 }
 
-window.addEventListener('scroll', updateScroll);
+function addSmoothScroll(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    addSmoothScroll(anchor);
+});
+
+addSmoothScroll(document.querySelector('.more-button'));
