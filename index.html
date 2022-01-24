@@ -3,6 +3,7 @@
 
 <head>
     <title>Солнечные батареи GreenCorp</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="fa/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="main.css">
@@ -67,7 +68,8 @@
         <div class="features__feedback-left">
             <h2>
                 Нам доверяет
-                <br> 5000+ счастливых клиентов
+                <br>
+                <div class="features__clients-count">5000+</div> счастливых клиентов
             </h2>
             <p>
                 Мы помогли тысячам людей перейти на зеленую энергию.
@@ -112,7 +114,7 @@
         </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="form">
         <div class="form__containter">
             <h1>Оставьте свои контакты</h1>
             <p>Поможем подобрать модель.
@@ -120,56 +122,57 @@
                 <br>Гарантия возврата денег.
             </p>
             <form>
-                <div class="form__group ">
-                    <label for="name ">Ваше имя</label>
-                    <input type="text " placeholder="Введите имя " id="name ">
-                    <label for="mail ">Электронный адрес</label>
-                    <input type="email " placeholder="***@yandex.ru " id="mail ">
-                    <label for="phone ">Номер телефона</label>
-                    <input type="tel " placeholder=" 7 (999) 999-99-99 " id="phone ">
-                    <label for="budget ">Примерный бюджет</label>
-                    <select id="budget ">
+                <div class="form__group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" placeholder="Введите имя " id="name ">
+                    <label for="mail">Электронный адрес</label>
+                    <input type="email" placeholder="***@yandex.ru " id="mail ">
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" placeholder=" 7 (999) 999-99-99 " id="phone ">
+                    <label for="budget">Примерный бюджет</label>
+                    <select id="budget">
             <option>Выберите вариант</option>
             <option value="10-30 ">10 000₽ – 30 000₽</option>
             <option value="30-60 ">30 000₽ – 60 000₽</option>
             <option value="60-100 ">60 000₽ – 100 000₽</option>
-            <option value="100+ ">100 000₽</option>
+            <option value="other ">Другое</option>
         </select>
                 </div>
-                <button class="submit ">Отправить заявку</button>
+                <button type="submit " class="form__submit ">Отправить заявку</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="footer__container">
+        <div class="footer__container ">
             <div class="footer__group ">
                 <h3>Позвонить нам:</h3>
-                <div class="footer__links">
+                <div class="footer__links ">
                     <a href="tel:74959999999 ">+7 (495) 999-99-99</a>
                 </div>
             </div>
-            <div class="footer__group">
+            <div class="footer__group ">
                 <h3>Решения для дома:</h3>
                 <div class="footer__links ">
                     <a href="# ">Солнечные панели GreenRobotic</a>
                     <a href="# ">Системы солнечных панелей GreenStation</a>
                 </div>
             </div>
-            <div class="footer__group">
+            <div class="footer__group ">
                 <h3>Компания</h3>
-                <div class="footer__links">
+                <div class="footer__links ">
                     <a href="# ">Контакты</a>
                     <a href="# ">Вакансии</a>
                     <a href="# ">СМИ</a>
                 </div>
             </div>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright ">
             <p>GreenCorp © 2021.</p>
         </div>
     </footer>
-    <script src="js/canvas.js"></script>
+    <script src="js/canvas.js "></script>
+    <script src="js/animations.js "></script>
 </body>
 
 </html>
